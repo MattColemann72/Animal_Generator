@@ -1,5 +1,10 @@
-import app
+from application import app
+from application.forms import AnimalNameSubmit
+from flask import render_template
 
 @app.route('/')
 def index():
-    return '<h1>Hello World</h1>'
+    form = AnimalNameSubmit()
+    
+    return render_template('index.html', title="Home Page")
+    #return '<h1>Hello World</h1>'

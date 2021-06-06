@@ -6,8 +6,8 @@ from sqlalchemy import Integer,String,Column
 
 class Animal_Group1(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    animalname = db.Column(db.String(12))
+    name = db.Column(db.String(12))
 
 class Animal_Group2(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    animalname = db.Column(db.String(12))
+    name = db.Column(db.String(12))
